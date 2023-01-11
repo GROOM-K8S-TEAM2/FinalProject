@@ -1,12 +1,12 @@
 <?php
 
-if ($_GET['mode'] == "transurl") {
+if ($_POST['mode'] == "transurl") {
 
   $client_id = "k8f1cLIc9CklNLgzOVXm"; // 네이버 개발자 센터에서 발급받은 클라이언트 아이디
 
   $client_secret = "Q75en0GhsT"; // 네이버 개발자 센터에서 발급받은 클라이언트 시크릿
 
-  $encText = $_GET['query'];
+  $encText = $_POST['query'];
 
   $url = "https://openapi.naver.com/v1/util/shorturl.xml?url=" . $encText;
 
@@ -227,7 +227,7 @@ if ($_GET['mode'] == "transurl") {
 
   <div class="search_shop">
 
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 
       <input type="hidden" name="mode" value="transurl" />
 
