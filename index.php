@@ -243,7 +243,7 @@ if ($_POST['mode'] == "transurl") {
 
     </form>
 
-    <div><?php echo $message; ?></div>
+    <div><?php $message=''; echo $message; ?></div>
 
     <table cellspacing="0" border="1" summary="단축 URL API 결과" class="tbl_type">
 
