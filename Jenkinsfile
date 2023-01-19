@@ -6,9 +6,9 @@ pipeline {
         sh 'php --version'
       }
     }
-    stage ('hello') {
+    stage ('final') {
       steps {
-        sh 'php hello.php'
+        sh 'php index.php'
       }
     }
   }
