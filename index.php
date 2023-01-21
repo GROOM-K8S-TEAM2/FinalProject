@@ -235,7 +235,7 @@ if ($_POST['mode'] == "transurl") {
 
         <legend>검색 영역</legend>
 
-        <span>원본 URL</span> <input type="text" name="query" id="query" accesskey="s" title="URL" class="keyword" value="http://www.naver.com">
+        <span>원본 URL</span> <input type="text" name="query" id="query" accesskey="s" title="URL" class="keyword" value="<?php echo $_POST['query'];?>">
 
         <input type="submit" id="search" value="변환" />
 
