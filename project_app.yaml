@@ -34,7 +34,7 @@ spec:
               mountPath: /etc/nginx/nginx.conf
               subPath: nginx.conf
         - name: php-fpm-container
-          image: php:7.0
+          image: php:7.0-fpm
           volumeMounts:
             - name: shared-files
               mountPath: /var/www/html
