@@ -367,3 +367,4 @@ data:
     fastcgi_params;\n      fastcgi_param REQUEST_METHOD $request_method;\n      fastcgi_param
     SCRIPT_FILENAME $document_root$fastcgi_script_name;\n      fastcgi_pass 127.0.0.1:9000;\n
     \     try_files $uri $uri/ /index.php?$query_string;\n    }\n  }\n}\n"
+...
