@@ -1,3 +1,5 @@
+# configmap 파일 필요
+
 ---
 apiVersion: apps/v1
 kind: Deployment
